@@ -24,10 +24,10 @@ class equipamiento(models.Model):
 
 
 class Cliente(models.Model):
-    rut = models.IntegerField(primary_key=True)
-    nom = models.TextField(max_length=100)
-    apell = models.TextField(max_length=100)
-    fono = models.IntegerField(9)
+    rut = models.CharField(primary_key=True,max_length=10)
+    nom = models.CharField(max_length=100)
+    apell = models.CharField(max_length=100)
+    fono = models.CharField(max_length=9)
     direc = models.CharField(max_length=300)
     email = models.EmailField(max_length=300)
 
