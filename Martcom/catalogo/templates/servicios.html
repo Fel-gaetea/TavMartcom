@@ -1,6 +1,8 @@
 {% extends "base_generic.html" %}
 {% block title %}<title>Servicios | Martcom</title>{% endblock %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/servicioscss.css' %}">
 <div id="container">
     <div>
         <h1>Nuestros servicios</h1>
@@ -9,12 +11,12 @@
     <div class="row">       
         <div class="col-md">    
         <div class="header">
-            <img src="img/Servicios/datos.png" alt="" >
+            <img src="{% static 'images/Servicios/datos.png'%}" alt="" >
          </div>
          <div class="descripcion">
             <h1>Datos</h1>
             <br>
-            <p>Suministro e instalación de equipos pasivos racks, bastidores, gabinetes, patch panel, ordenadores, módulos, 
+            <p >Suministro e instalación de equipos pasivos racks, bastidores, gabinetes, patch panel, ordenadores, módulos, 
                 conectores, redes de cableado estructurado y fibra óptica. Entre ellas (fast ethernet, ethernet, token ring, FDDI), 
                 redes de datos inalámbricas (Wirelles) certificación de cableado (UTP, FTP, SFTP y fibra óptica multimodo),
                  mantenciones preventivas y correctivas para redes de datos, servicios de atención de emergencias.</p>
@@ -26,12 +28,12 @@
        <div class="row">       
         <div class="col-md"> 
         <div class="header">
-            <img src="img/Servicios/electricidad.png" alt="" >
+            <img src="{% static 'images/Servicios/electricidad.png'%}" alt="" >
          </div>
          <div class="descripcion">
             <h1>Electricidad</h1>
             <br>
-            <p>Proyecto e instalación de redes eléctricas para corrientes normales, iluminación y computación, 
+            <p >Proyecto e instalación de redes eléctricas para corrientes normales, iluminación y computación, 
                 diseño y montaje de mallas de tierra, estudio de resistividad de terreno, suministro e instalación de equipos de respaldo de energía (UPS), 
                 mantenciones preventivas y correctivas para redes eléctricas, diseño e instalación de tableros eléctricos modulares, 
                 corrección de factor de potencia, servicios de atención de emergencias.</p>
@@ -43,12 +45,12 @@
        <div class="row">       
         <div class="col-md"> 
         <div class="header">
-            <img src="img/Servicios/seguridad.png" alt="" >
+            <img src="{% static 'images/Servicios/seguridad.png'%}" alt="" >
          </div>
          <div class="descripcion">
             <h1>Seguridad cctv</h1>
             <br>
-            <p>En el campo de sistemas de cámaras de seguridad Hemos realizado alianzas con los principales proveedores y fabricantes de cámaras de seguridad y 
+            <p >En el campo de sistemas de cámaras de seguridad Hemos realizado alianzas con los principales proveedores y fabricantes de cámaras de seguridad y 
                 equipos DVR del mundo Análogo y de video sobre redes IP. 
                 Lo cual nos permite entregar una completa solución e integración a cualquier necesidad de seguridad para su empresa.</p>
          </div>
@@ -59,12 +61,12 @@
        <div class="row">       
         <div class="col-md"> 
         <div class="header">
-            <img src="img/Servicios/voz.png" alt="" >
+            <img src="{% static 'images/Servicios/voz.png'%}" alt="" >
          </div>
          <div class="descripcion">
              <h1>Voz</h1>
              <br>
-            <p>Suministro e instalación de equipos pasivos racks, bastidores, 
+            <p >Suministro e instalación de equipos pasivos racks, bastidores, 
                 gabinetes, patch panel, ordenadores, módulos, conectores, redes de cableado estructurado y fibra óptica. Entre ellas 
                 (fast ethernet, ethernet, token ring, FDDI), redes de datos inalámbricas (Wirelles) certificación de cableado (UTP, FTP, SFTP y fibra óptica multimodo), 
                 mantenciones preventivas y correctivas para redes de datos, servicios de atención de emergencias.</p>

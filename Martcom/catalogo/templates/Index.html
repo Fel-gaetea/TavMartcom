@@ -1,6 +1,8 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+{% load static %}
+
 
 <div class="container">
     
@@ -57,7 +59,7 @@
             <img class="card-img-top" src="{% static 'images/tarjetas/rentabiliad.png'%}">
             <h4 class="card-title">Rentabilidad</h4>
             <p class="card-text">Nuestra rentabilidad como empresa aumenta cada año gracias a nuestro esfuerzo por ser la empresa lider en la industria. </p>
-            <a href="nosotros.html" class="btn btn-primary">Entrar</a>
+            <a href="{% url 'nosotros' %}" class="btn btn-primary">Entrar</a>
           </div>
         </div>          
     </div>
@@ -68,7 +70,7 @@
             <img class="card-img-top" src="{% static 'images/tarjetas/agilidad.png'%}">
             <h4 class="card-title">Agilidad</h4>
             <p class="card-text">Los tiempos cambian por esto nosotros tambien y siempre vamos adaptandonos a la actualidad para tener siempre lo ultimo en tecnologia. </p>
-            <a href="nosotros.html" class="btn btn-primary">Entrar</a>
+            <a href="{% url 'nosotros' %}" class="btn btn-primary">Entrar</a>
           </div>
         </div>          
     </div>
@@ -79,7 +81,7 @@
             <img class="card-img-top" src="{% static 'images/tarjetas/compromiso.png'%}">
             <h4 class="card-title">Compromiso</h4>
             <p class="card-text">Nuestro compromiso siempre sera crecer como empresa y dar lo mejor a nuestros clientes para que se sientas satisfechos de habernos elegido para sus proyectos. </p>
-            <a href="nosotros.html" class="btn btn-primary">Entrar</a>
+            <a href="{% url 'nosotros' %}" class="btn btn-primary">Entrar</a>
           </div>
         </div>          
     </div>      

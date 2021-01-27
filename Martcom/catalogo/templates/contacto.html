@@ -1,66 +1,112 @@
 {% extends "base_generic.html" %}
 {% block title %}<title>Contacto | Martcom</title>{% endblock %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contacto.css' %}">
 <br>
-  <br>
+<br>
     
-  <h1>Contactanos</h1>
+<h1>Contactanos</h1>
 
+<script>
+$(function() 
+{
+    $("#mi-formulario").validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            numero: "required",
+            rut: "required",
+            nombres: "required",
+            apellidos: "required",
+            direccion: "required"
+           }, //rules
+        messages: {
+            email: {
+                required: 'Ingresa tu correo electrónico',
+                email: 'Formato de correo no válido'
+            },
+            numero:{
+                required: 'Ingrese un número de celular',
+                minlength: 'Cantidad de digitos insuficiente'
+            },
+            nombres:{
+                required: 'Ingrese su nombre',
+                minlength: 'Caracteres insuficientes'
+            },
+            apellidos:{
+                required: 'Ingrese su apellido',
+                minlength: 'Caracteres insuficientes'
+            },
+            direccion:{
+                required: 'Ingrese su dirreccion'
+            },
+            rut:{
+                required: 'Ingrese su Rut',
+                minlength: 'Caracteres insuficientes',
+                maxlength: 'Caracteres insuficientes'
+            }
+        }//messages
+   }); //$('#mi-formulario').validate
+}); //function
+</script>
 <!-- inicio Formulario -->
 <div>
-  <div class="con-contacto">
-      <div class="contacto">
-          <h3>Martcom</h3>
-          <form  id="mi-formulario" action="">
-              <p>
-                  <label>Nombres</label>
-                  <input type="texto" name="nombres" minlength="3" required>
-              </p>
-              <p>
-                  <label>Apellidos</label>
-                  <input type="texto" name="apellidos" minlength="3" required>
-              </p>
-              <p>
-                  <label>Direccion de E-mail</label>
-                  <input type="email" name="email" placeholder="nombre@dominio.cl" required>
-              </p>
-              <p>
-                  <label>Numero de telefono</label>
-                  <input type="numero" name="numero"  minlength="9" required>
-              </p>
-              <p>
-                  <label>Rut</label>
-                  <input type="numero" name="rut" maxlength="10" minlength="7" required>
-              </p>
-              <p>
-                  <label>Direccion</label>
-                  <input type="texto" name="direccion" required>
-              </p>
-              <p class="block">
-                  <label>Mensaje</label>
-                  <textarea name="Mensaje" rows="3"></textarea>
-              </p>
-              <p class="block">
-                  <button>
-                      Enviar
-                  </button>
-              </p>
-          </form>
-      </div>
-      <div class="info-contacto">
-          <h4>Mas Informacion</h4>
-          <ul>
-              <li><i></i> Av. la Dehesa #7100</li>
-              <li><i></i> +56 (2) 2 552 08 00</li>
-              <li><i></i> contacto@martcom.com</li>
-          </ul>
-          <p id=>Solicita más información de nuestras soluciones por medio de un ejecutivo comercial que podrá orientarte mejor con los servicios adecuados para tu necesidad</p>
+    <div class="con-contacto">
+        <div class="contacto">
+            <h3>Martcom</h3>
+            <form  id="mi-formulario" action="">
+                <p>
+                    <label>Nombres</label>
+                    <input type="texto" name="nombres" minlength="3" required>
+                </p>
+                <p>
+                    <label>Apellidos</label>
+                    <input type="texto" name="apellidos" minlength="3" required>
+                </p>
+                <p>
+                    <label>Direccion de E-mail</label>
+                    <input type="email" name="email" placeholder="nombre@dominio.cl" required>
+                </p>
+                <p>
+                    <label>Numero de telefono</label>
+                    <input type="numero" name="numero"  minlength="9" required>
+                </p>
+                <p>
+                    <label>Rut</label>
+                    <input type="numero" name="rut" maxlength="10" minlength="7" required>
+                </p>
+                <p>
+                    <label>Direccion</label>
+                    <input type="texto" name="direccion" required>
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea name="Mensaje" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="info-contacto">
+            <h4>Mas Informacion</h4>
+            <ul>
+                <li><i></i> Av. la Dehesa #7100</li>
+                <li><i></i> +56 (2) 2 552 08 00</li>
+                <li><i></i> contacto@martcom.com</li>
+            </ul>
+            <p id=>Solicita más información de nuestras soluciones por medio de un ejecutivo comercial que podrá orientarte mejor con los servicios adecuados para tu necesidad</p>
 
-      </div>
-  </div>
+    </div>
 </div>
 </div>
- <!-- Final Formulario -->
-       <br>
-       <br>
+</div>
+<!-- Final Formulario -->
+    <br>
+    <br>
 {% endblock %}

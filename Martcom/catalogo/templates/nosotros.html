@@ -1,11 +1,15 @@
 {% extends "base_generic.html" %}
 {% block title %}<title>Nosotros | Martcom</title>{% endblock %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
 <section class="showcase">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
 
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/nosotros.jpg');"></div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/nosotros.jpg');">
+                <img src="{% static 'images/nosotros/nosotros.jpg'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Nosotros</h2>
                 <p class="lead mb-0">Nuestra especialización técnica, amplia experiencia en el sector y la continua actualización en el conocimiento de las últimas tecnologías, nos permite proporcionar a nuestros clientes todo tipo de soluciones a medida, cumpliendo con
@@ -13,7 +17,9 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/nosotros/nuestro-trabajo.png');"></div>
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/nosotros/nuestro-trabajo.png');">
+                <img src="{% static 'images/nosotros/nuestro-trabajo.png'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
             <div class="col-lg-6 my-auto showcase-text">
                 <h2>Nuestro Trabajo</h2>
                 <p class="lead mb-0">Instalamos redes de Voz/Datos, las certificamos dentro de los estándares técnicos vigentes, utilizando las herramientas necesarias en cada instalación. Contamos con un equipo de trabajo con gran experiencia y con capacidad demostrada
@@ -21,7 +27,9 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/equipo-todos.jpg');"></div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/equipo-todos.jpg');">
+                <img src="{% static 'images/nosotros/equipo-todos.jpg'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Nuestro Equipo</h2>
                 <p class="lead mb-0">Nuestro equipo humano, que está formado por profesionales con amplios conocimientos, capacidad técnica y experiencia en el sector de las telecomunicaciones. Y que por sobre todo nos entregan: Compromiso, Dedicación, Trabajo en equipo

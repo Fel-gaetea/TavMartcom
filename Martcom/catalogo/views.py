@@ -23,15 +23,14 @@ def index(request):
     )
 
 def nosotros(request):
-    
-return render(
+    return render(
     request,
     'nosotros.html',
 )
 
-    def servicios(request):
+def servicios(request):
 
-    num_servicio=Servicios.objects.all().count()
+    num_servicios=Servicios.objects.all().count()
     
     return render(
 
@@ -39,10 +38,10 @@ return render(
 
         'servicios.html',
 
-        context={ 'num_servicios': num_serviciosr},
+        context={ 'num_servicios': num_servicios},
     )
 
-    def contacto(request):
+def contacto(request):
 
     num_clientes = Cliente.objects.all().count()
     

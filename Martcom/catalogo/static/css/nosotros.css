@@ -6,6 +6,7 @@
 #galeria img {
     width: 90%;
     height: 220px;
+    border: black;
 }
 
 #galeria img:hover {
