@@ -1,0 +1,75 @@
+{% extends "base_generic.html" %}
+{% block title %}<title>Nosotros | Martcom</title>{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/nosotros.jpg');">
+                <img src="{% static 'images/nosotros/nosotros.jpg'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Nosotros</h2>
+                <p class="lead mb-0">Nuestra especialización técnica, amplia experiencia en el sector y la continua actualización en el conocimiento de las últimas tecnologías, nos permite proporcionar a nuestros clientes todo tipo de soluciones a medida, cumpliendo con
+                    los requerimientos específicos de su negocio y que aporten un valor agregado y un beneficio real, mejorando así la productividad general de sus empresas.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/nosotros/nuestro-trabajo.png');">
+                <img src="{% static 'images/nosotros/nuestro-trabajo.png'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Nuestro Trabajo</h2>
+                <p class="lead mb-0">Instalamos redes de Voz/Datos, las certificamos dentro de los estándares técnicos vigentes, utilizando las herramientas necesarias en cada instalación. Contamos con un equipo de trabajo con gran experiencia y con capacidad demostrada
+                    para llevar a término instalaciones de gran tamaño. </p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/nosotros/equipo-todos.jpg');">
+                <img src="{% static 'images/nosotros/equipo-todos.jpg'%}" alt="Logo nosotros" style="width: 90%;">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Nuestro Equipo</h2>
+                <p class="lead mb-0">Nuestro equipo humano, que está formado por profesionales con amplios conocimientos, capacidad técnica y experiencia en el sector de las telecomunicaciones. Y que por sobre todo nos entregan: Compromiso, Dedicación, Trabajo en equipo
+                    transformándose así en los 3 pilares de nuestra compañía.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="galeria" class="container">
+
+        <div class="text-center pt-5">
+            <h1>Nuestros Clientes</h1>
+            <p>El éxito alcanzado, producto del continuo desarrollo, nos ha permitido ser socios estratégicos de diversas compañías, consolidando así el crecimiento que hemos tenido durante los últimos años.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/cencosud.jpg'%}" alt="Logo Cencosud">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/gendarmeria.jpg'%}" alt="Logo Gendarmeria">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/gtd.jpg'%}" alt="Logo GTD">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/redsalud.jpg'%}" alt="Logo RedSalud">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/puerto.jpg'%}" alt="Logo Puerto san antonio">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="{% static 'images/Nosotros/radisson.jpg'%}" alt="Logo Hotel Radisson">
+            </div>
+        </div>
+        <br>
+
+
+    </section>
+
+
+{% endblock %}
